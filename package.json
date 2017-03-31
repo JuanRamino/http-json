@@ -1,0 +1,19 @@
+{
+  "name": "http-server-json",
+  "version": "1.0.0",
+  "description": "Simple http server that accept json",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Juan Ramino",
+    "email": "juan.ramino@gmail.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "node-fetch": "^1.6.3"
+  }
+}
