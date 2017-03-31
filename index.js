@@ -7,7 +7,6 @@ const http = require('http')
  * @param {function(object, http.ServerResponse)} function to handle an object
  * @return undefined
  */
-
 exports.start = function(port, host, handleData) {
 
     function server(req, res) {
