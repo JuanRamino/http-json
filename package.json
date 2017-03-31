@@ -1,5 +1,5 @@
 {
-  "name": "ramino/http-server-json",
+  "name": "@username/http-json",
   "version": "1.0.0",
   "description": "Simple http server that accept json",
   "main": "index.js",
