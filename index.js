@@ -1,5 +1,13 @@
 const http = require('http')
 
+/**
+ * start http server
+ * @param {number} port number listening
+ * @param {string} host name listening 
+ * @param {function(object, http.ServerResponse)} function to handle an object
+ * @return undefined
+ */
+
 exports.start = function(port, host, handleData) {
 
     function server(req, res) {
@@ -37,11 +45,23 @@ exports.start = function(port, host, handleData) {
     http.createServer(server).listen(port, host)
 }
 
+/**
+ * send error object response to client 
+ * @param {err} error
+ * @param {res} http.ServerResponse
+ * @return undefined
+ */
 exports.handleError = function(err, res) {
     res.writeHead(200, { 'Content-Type': 'application/json' })
     res.end( JSON.stringify({ error: err.message }) )
 }
 
+/**
+ * send data object to client
+ * @param {data} object
+ * @param {res} http.ServerResponse
+ * @return undefined
+ */
 exports.handleOut = function(data, res) {
     res.writeHead(200, { 'Content-Type': 'application/json' })
     res.end( JSON.stringify(data) )
