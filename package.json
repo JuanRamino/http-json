@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha test"
   },
-  "repository" : "git+https//github.com/JuanRamino/http-server-json.git",
+  "repository" : "git+https://github.com/JuanRamino/http-json.git",
   "keywords": [],
   "author": {
     "name": "Juan Ramino",
