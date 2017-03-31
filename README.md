@@ -18,3 +18,14 @@ You can use it in this way:
     }
 
     server.start(8080, '0.0.0.0', handleData)
+
+You should run test in this way:
+
+    SRV_PORT=8080 SRV_HOST=0.0.0.0 npm run test
+
+It also 2 functions to send response back to client with data or error
+    
+    const server = require('http-server-json')
+    
+    server.handleError(err, res)
+    server.handleOut(data, res)

@@ -16,10 +16,10 @@ exports.start = function(port, host, handleData) {
 
         let jsonString = ''
         let json
-        
+
         req.on('data', function (data) {
             jsonString += data
-        });
+        })
 
         req.on('end', function () {
             
@@ -35,4 +35,14 @@ exports.start = function(port, host, handleData) {
     }
 
     http.createServer(server).listen(port, host)
+}
+
+exports.handleError = function(err, res) {
+    res.writeHead(200, { 'Content-Type': 'application/json' })
+    res.end( JSON.stringify({ error: err.message }) )
+}
+
+exports.handleOut = function(data, res) {
+    res.writeHead(200, { 'Content-Type': 'application/json' })
+    res.end( JSON.stringify(data) )
 }
