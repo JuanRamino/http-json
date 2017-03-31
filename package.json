@@ -1,5 +1,5 @@
 {
-  "name": "http-json",
+  "name": "http-j",
   "version": "1.0.0",
   "description": "Simple http server that accept json",
   "main": "index.js",

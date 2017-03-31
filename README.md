@@ -1,4 +1,4 @@
-# HTTP JSON
+# HTTP J
 
 This is a simple node http server that accepts only json.
 It has been published cause I don't need to repeat this code in every simple http based service
