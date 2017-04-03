@@ -5,11 +5,11 @@ It has been published cause I don't need to repeat this code in every simple htt
 
 You can install it in this way:
 
-    npm install --save http-server-json
+    npm install --save http-j
 
 You can use it in this way:
 
-    const server = require('http-server-json')
+    const server = require('http-j')
 
     # res is an http.ServerResponse
     function handleData(json, res) {
@@ -25,7 +25,7 @@ You should run test in this way:
 
 It also 2 functions to send response back to client with data or error
     
-    const server = require('http-server-json')
+    const server = require('http-j')
     
     server.handleError(err, res)
     server.handleOut(data, res)
