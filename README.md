@@ -23,7 +23,7 @@ You should run test in this way:
 
     SRV_PORT=8080 SRV_HOST=0.0.0.0 npm run test
 
-It also 2 functions to send response back to client with data or error
+It also includes two functions to send response back to client with data or error
     
     const server = require('http-j')
     
